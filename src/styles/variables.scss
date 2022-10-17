@@ -1,0 +1,28 @@
+$color-list: (
+  "athens-gray": #e4e7ee,
+  "bittersweet": #ff6262,
+  "black": #000000,
+  "boulder": #797979,
+  "geiser": #d5dae4,
+  "iron": #d8dadf,
+  "mine-shaft": #272727,
+  "mishka": #ced4de,
+  "mountain-meadow": #1eb55e,
+  "mystic": #dfe3ea,
+  "ocean-green": #4bb46e,
+  "outer-space": #2a363b,
+  "pastel-green": #5ceb9a,
+  "porcelain": #eceff1,
+  "porcelain2": #ebeef0,
+  "raven": #7d828c,
+  "white": #ffffff,
+  "red": #ff0000,
+  "darkgray": #a9a9a9,
+  "deep-green": #25c169,
+  "yellow": #fade4b,
+  "danger": #FF8F00,
+);
+
+@function get-color($color) {
+  @return map-get($color-list, $color);
+}
