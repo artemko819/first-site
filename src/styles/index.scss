@@ -1,0 +1,113 @@
+// Packages
+@import "./index.css";
+@import "./variables.scss";
+
+@import "./components/index";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: get-color("black");
+  color: get-color("white");
+  font-family: 'Montserrat', sans-serif;
+}
+div.dropdown {
+  position: relative;
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.accordion{
+  button{
+    svg{
+      color:#888;
+    }
+  }
+}
+
+div.dropdown {
+  div.caption {
+    background-color: transparent;
+    padding: 11px 15px;
+
+    cursor: pointer;
+  }
+}
+
+div.dropdown {
+  div.list {
+    position: relative;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    z-index: 9999;
+  }
+}
+
+div.dropdown > div.list > div.item {
+  padding: 11px 24px;
+  cursor: pointer;
+}
+
+div.dropdown > div.list > div.item.selected {
+  font-weight: bold;
+}
+
+
+div.dropdown.open > div.list {
+  display: block;
+}
+
+
+.Stain {
+  position: relative;
+  z-index: -100;
+  span {
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(50px);
+  }
+}
+
+@for $position from 0 through 100 {
+  .u-bottom-#{$position} {
+    transform: translateY(#{"-"}#{$position * 10}#{"px"});
+  }
+  .u-left-#{$position} {
+    transform: translateX(#{$position * 10}#{"px"});
+  }
+  .u-right-#{$position} {
+    transform: translateX(#{"-"}#{$position * 10}#{"px"});
+  }
+  .u-top-#{$position} {
+    transform: translateY(#{$position * 10}#{"px"});
+  }
+}
+
+.blur-bg {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: get-color("white");
+    opacity: 0.1;
+    position: absolute;
+    border-radius: 0.5rem;
+    z-index: -1;
+  }
+}
+
+.blur-bg-not-radius {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: get-color("white");
+    opacity: 0.1;
+    position: absolute;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,22 @@
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build app
+          image: node:latest
+          caches:
+            - node
+          script:
+            - npm install
+            - unset CI
+            - npm run build
+          artifacts:
+            - build/**
+      - step:
+          name: Deploy to Prod Server
+          deployment: production
+          script:
+            - apt-get update
+            - apt-get install ncftp
+            - ncftpput -v -u "$FTP_PROD_USERNAME" -p "$FTP_PROD_PASSWORD" -R $FTP_PROD_HOST $FTP_PROD_PATCH build/*
+            - echo Finished uploading /build files to $FTP_PROD_HOST$FTP_PROD_PATCH

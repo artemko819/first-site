@@ -1,0 +1,32 @@
+.FileField {
+  border: 3px solid get-color('white');
+
+  &__image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__delete {
+    background-color: get-color('danger');
+    padding: 1px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: get-color('white');
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+  }
+
+  &__imageConteiner {
+    position: relative;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
