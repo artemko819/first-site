@@ -90,7 +90,7 @@ const TransferForm = ({
         .required(t("base.required")),
     }));
     formikRef.current?.validateForm();
-  }, [fromItem, toItem]);
+  }, [fromItem, t, toItem]);
 
   const initialValues: TransactionForm = {
     email: emailFromCookies,

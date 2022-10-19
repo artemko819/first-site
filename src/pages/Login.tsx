@@ -6,7 +6,7 @@ import { useLogin } from "../apis/auth";
 import { LoginForm } from "../types/auth";
 import { useNavigate } from "react-router";
 import { AuthContext, AuthContextType } from "../context/authContext";
-import ColorStain from "../components/ui/ColorStain";
+// import ColorStain from "../components/ui/ColorStain";
 import { getAuthToken } from "../utils/cookie";
 import { useTranslation } from "react-i18next";
 
@@ -34,7 +34,7 @@ const Login = () => {
 
   return (
     <>
-      <ColorStain size={100} color="orange" className="u-left-75" />
+      {/* <ColorStain size={100} color="orange" className="u-left-75" /> */}
       <div className="h-full w-full flex justify-center items-center">
         <div className="blur-bg rounded-lg place-content-center w-full md:w-1/2">
           <div className="p-8">
@@ -78,7 +78,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <ColorStain size={300} color="blue" />
+      {/* <ColorStain size={300} color="blue" /> */}
     </>
   );
 };

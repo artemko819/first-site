@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
 import { Currency, CurrencyFrom } from "../types/pair";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { getCurrencyName } from "../utils/formats";
 import { cryptoImage, cryptoImageFrom, selectImage } from "../apis/images";
 
@@ -22,7 +22,7 @@ const Pairs = ({
   fromItem,
   toItem,
 }: Props) => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [openFrom, setOpenFrom] = React.useState(false);
   const [openTo, setOpenTo] = React.useState(false);
   const [selectIndex, setSelectIndex] = React.useState(0);

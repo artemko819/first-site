@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "../components/Icon";
-import ColorStain from "../components/ui/ColorStain";
+// import ColorStain from "../components/ui/ColorStain";
 import { getDomainName } from "../utils/utils";
 
 const TGLint = "https://t.me/HestiaExchange_support";
@@ -9,7 +9,7 @@ const gmailLink = `support@${getDomainName()}`;
 
 const Contacts = () => (
   <>
-    <ColorStain size={200} color="orange" className="u-left-75" />
+    {/* <ColorStain size={200} color="orange" className="u-left-75" /> */}
     <div className="h-full w-full flex justify-center items-center">
       <div className="blur-bg rounded-lg">
         <div className="p-8">
@@ -91,7 +91,7 @@ const Contacts = () => (
         </div>
       </div>
     </div>
-    <ColorStain size={300} color="blue" />
+    {/* <ColorStain size={300} color="blue" /> */}
   </>
 );
 

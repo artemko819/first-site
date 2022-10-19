@@ -29,12 +29,12 @@ const QrForm = () => {
 
   return (
     <>
-      <ColorStain size={100} color="green" className="u-left-90" />
+      {/* <ColorStain size={100} color="green" className="u-left-90" /> */}
       <ConfirmationForm
         handleConfirm={handleConfirm}
         transaction={transaction}
       />
-      <ColorStain size={300} color="blue" />
+      {/* <ColorStain size={300} color="blue" /> */}
     </>
   );
 };

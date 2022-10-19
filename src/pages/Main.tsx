@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, {  useMemo } from "react";
 import { useGetPairs } from "../apis/pairs";
 import { getResponseList } from "../apis/utils";
 import Loader from "../components/Loader";
@@ -6,7 +6,7 @@ import Loader from "../components/Loader";
 import Pairs from "../components/Pairs";
 import TechnicalProblem from "../components/TechnicalProblems";
 import TransferForm from "../components/TransferForm";
-import ColorStain from "../components/ui/ColorStain";
+// import ColorStain from "../components/ui/ColorStain";
 import { useGetRate } from "../hooks/useGetRate";
 import { useGetSelectedPair } from "../hooks/useGetSelectedPair";
 import { useGetUniquePairs } from "../hooks/useGetUniquePairs";
@@ -44,12 +44,12 @@ const Main = () => {
   return (
     <>
       {/* <ColorStain size={300} color="violet" /> */}
-      <div className="lg:flex justify-center flex-col rounded-lg md:grid-cols-1 mt-3 md:grid md:grid-cols-5 gap-y-10 md:gap-10">
-        <h1 className=" text-center leading-10 xl:text-6xl lg:text-4xl  sm:text-3xl  leading-4 sm:mb-3">
+      <div className="lg:flex justify-center flex-col rounded-lg md:grid-cols-1 mt-3 md:grid md:grid-cols-5 gap-y-10 xl:gap-10 lg:gap-6 md:gap-2 sm:gap-2">
+        <h1 className=" text-center leading-10 xl:text-6xl lg:text-4xl  sm:text-3xl  sm:leading-1 sm:mb-3">
           Удобный сервис для обмена валюты
         </h1>
-        <h2 className="text-center xl:text-[32px] lg:text-[22px] md:leading-10 sm:text-[18px] sm:mb-3 sm:leading-5">Онлайн обменник криптовалют и электронных денег HestiaexChange</h2>
-        <p className="text-center lg:text-[22px] lg:leading-8  sm:text-[14px]  sm:leading-4">
+        <h2 className="text-center xl:text-[32px] lg:text-[22px] md:leading-10 sm:text-[18px] sm:mb-3 sm:leading-1">Онлайн обменник криптовалют и электронных денег HestiaexChange</h2>
+        <p className="text-center lg:text-[22px] lg:leading-8  sm:text-[14px]  sm:leading-1">
           Онлайн обменник HestiaexChange предоставляет возможность купить,
           продать или обменять криптовалюту в любое удобное время. Мы предлагаем
           максимально выгодные курсы и не взимаем комиссий. Большинство операций

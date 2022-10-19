@@ -70,7 +70,7 @@ function App() {
       <div className="font-sans overflow-hidden flex flex-col	justify-between	min-h-screen">
         <div>
           <Header />
-          <main className="container mx-auto px-4 mb-20 md:mt-20 relative">
+          <main className="container mx-auto px-4 mb-20 xl:mt-20 lg:mt-14 md:mt-10 relative">
             <AuthContextProvider>
               <Routes>
                 <Route index element={<Main />} />

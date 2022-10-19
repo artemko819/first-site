@@ -7,13 +7,13 @@ const FAQ = () => (
   <>
     <ColorStain size={300} color="orange" className="u-left-75" />
     <div className="h-full w-full flex justify-center items-center">
-      <div className="blur-bg rounded-lg accordion">
+      <div className="blur-bg w-full  rounded-lg accordion">
         <div className="p-8">
           <h2 className="text-center font-bold text-3xl">Вопросы и ответы</h2>
           <p className="my-5">
             Здесь вы можете узнать ответы на наиболее часто задаваемые вопросы
           </p>
-          <Accordion flush>
+          <Accordion flush alwaysOpen={true}>
             <Accordion.Panel>
               <Accordion.Title>
                 <p className="text-accent">
@@ -115,7 +115,7 @@ const FAQ = () => (
         </div>
       </div>
     </div>
-    <ColorStain size={100} color="blue" />
+    {/* <ColorStain size={100} color="blue" /> */}
   </>
 );
 

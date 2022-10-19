@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useGetTransaction } from "../apis/transactions";
 import { getResponseModel } from "../apis/utils";
 import Loader from "../components/Loader";
-import ColorStain from "../components/ui/ColorStain";
+// import ColorStain from "../components/ui/ColorStain";
 
 const ConfirmedOrder = () => {
   const params = useParams();
@@ -30,7 +30,7 @@ const ConfirmedOrder = () => {
 
   return (
     <>
-      <ColorStain size={100} color="orange" className="u-left-75" />
+      {/* <ColorStain size={100} color="orange" className="u-left-75" /> */}
       <div className="h-full w-full flex justify-center items-center">
         <div className="max-w-3xl blur-bg rounded-lg">
           <div className="p-8">
@@ -51,7 +51,7 @@ const ConfirmedOrder = () => {
           </div>
         </div>
       </div>
-      <ColorStain size={300} color="blue" />
+      {/* <ColorStain size={300} color="blue" /> */}
     </>
   );
 };

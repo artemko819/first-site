@@ -1,5 +1,5 @@
 import React from "react";
-import ColorStain from "../components/ui/ColorStain";
+// import ColorStain from "../components/ui/ColorStain";
 import { getDomainName } from "../utils/utils";
 
 const domainName = getDomainName();
@@ -481,7 +481,7 @@ const rules = [
 
 const Rules = () => (
   <>
-    <ColorStain size={100} color="green" className="u-left-75" />
+    {/* <ColorStain size={100} color="green" className="u-left-75" /> */}
     <div className="h-full w-full flex justify-center items-center">
       <div className="blur-bg rounded-lg">
         <div className="p-8">
@@ -536,7 +536,7 @@ const Rules = () => (
         </div>
       </div>
     </div>
-    <ColorStain size={300} color="violet" />
+    {/* <ColorStain size={300} color="violet" /> */}
   </>
 );
 
